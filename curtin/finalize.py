@@ -141,17 +141,17 @@ def curthooks():
     fp_u.close()
 
     # My own hooks
-    myhooks(cloudbase_init_values, os.path.join(
-        cloudbaseinit,
-        "conf",
-        "my_result.txt"))
+    #myhooks(cloudbase_init_values, os.path.join(
+    #    cloudbaseinit,
+    #    "conf",
+    #    "my_result.txt"))
 
 # My own hooks
-def myhooks(cloudbase_init_values, path):
-    fp = open(path, 'a')
-    for i in cloudbase_init_values.splitlines():
-        fp.write("%s\r\n" % i)
-    fp.close()
+#def myhooks(cloudbase_init_values, path):
+#    fp = open(path, 'a')
+#    for i in cloudbase_init_values.splitlines():
+#        fp.write("%s\r\n" % i)
+#    fp.close()
 
 
 curthooks()
